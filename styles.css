@@ -1,0 +1,259 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #333;
+
+}
+
+/* Resume Container */
+.resume-container {
+    width: 210mm;
+    height: 297mm;
+    margin: 20px auto;
+    padding: 20mm;
+    background: white;
+    border: 2px solid #007bff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+   
+}
+
+/* Header */
+.resume-header {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid#02324e;
+    margin-bottom: 15px;
+}
+
+.resume-header h1 {
+    font-size: 3.5rem;
+    color: #cccccc;
+    background-color: #02324e; 
+    padding-top: 20px;
+    margin-top: 1px;
+    
+
+}
+
+/* Resume Body */
+.resume-body {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+/* Left Panel */
+.left-panel {
+    width: 30%;
+    padding: 10px;
+    border-right: 2px solid #ddd;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.contact-info, .hobbies {
+    margin-bottom: 15px;
+    background-color: #02324e;
+    color:#cccccc ;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Right Panel */
+.right-panel {
+    width: 70%;
+    padding: 10px;
+}
+
+main section {
+    margin-bottom: 15px;
+}
+
+main section h2 {
+    font-size: 1.5rem;
+    color: #002144;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.job h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.job h4 {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: auto;
+}
+
+/* Print-specific styles */
+@media print {
+    body {
+        background: none;
+    }
+    .resume-container {
+        box-shadow: none;
+    }
+}
+
+
+.profile-pic img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #cccccc; 
+}
+
+/* Resume Body */
+.resume-body {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%; 
+}
+
+/* Left Panel */
+.left-panel {
+    width: 30%;
+    background-color: #02324e; 
+    color: #cccccc; 
+    border-right: 2px solid #ddd; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    height: 100%; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+}
+
+/* Right Panel */
+.right-panel {
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 30%; 
+}
+
+/* Background image in the body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #333;
+    background-image: url('https://getwallpapers.com/wallpaper/full/f/3/3/765105-technology-background-images-1920x1080-free-download.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+
+/* Rating System Styling */
+.rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.star {
+    color: gray; /* Default color */
+}
+
+.star.selected {
+    color: gold; /* Selected star color */
+}
+
+.star:hover {
+    color: gold; /* Hover effect */
+}
+
+.theme-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.theme-btn:hover {
+    background-color: #16a085;
+}
+
+/* Skill container */
+#skills {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 0;
+    height: 20px;
+    background-color: lightgray;
+    border-radius: 10px;
+    transition: width 2s ease-out;
+}
+
+#js {
+    background-color: #f7df1e; /* JavaScript Yellow */
+}
+
+#python {
+    background-color: #306998; /* Python Blue */
+}
+
+#cpp {
+    background-color: #00599c; /* C++ Blue */
+}
+
+#ruby {
+    background-color: #d91430; /* Ruby Red */
+}
+
+.skill:hover .progress-bar {
+    width: 90%; /* Adjust to your skill level */
+}
+
+
